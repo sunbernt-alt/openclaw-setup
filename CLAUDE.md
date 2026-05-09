@@ -8,7 +8,11 @@ Kjører på Ubuntu 24.04 med RTX 4090, 64 GB RAM, lokal Qwen3 + Claude API.
 ## Arkitektur
 
 ```
-Telegram Bot
+Microsoft Teams (kanal eller personlig chat)
+    │  varsler: Incoming Webhook
+    │  kommandoer: /bull /bear /analyse /inbox
+    ▼
+Teams Bot (Node.js, botbuilder SDK, port 3978)
     │
     ▼
 OpenClaw (Claude Code / NemoClaw)
@@ -36,7 +40,7 @@ OpenClaw (Claude Code / NemoClaw)
 | Lokal modell nå | Qwen3 14B (bytter til 32B når ny disk er klar) |
 | Cloud analyse | Claude API Sonnet |
 | Nyhetsdata | Perplexity Pro API |
-| UI | Telegram |
+| UI | Microsoft Teams |
 | NemoClaw | v0.1.0 @ `~/.nemoclaw` |
 
 ## Regler

@@ -33,7 +33,7 @@ bash scripts/setup.sh
 - NemoClaw v0.1.0 installert (`nemoclaw --version`)
 - Claude API-nøkkel
 - Perplexity Pro API-nøkkel (for aksjenyhet)
-- Telegram Bot Token
+- Microsoft Teams Incoming Webhook URL (se `config/teams-setup.md`)
 
 ## Agents
 
@@ -56,9 +56,12 @@ openclaw-setup/
 │   ├── bear-agent.md
 │   ├── risk-reward-agent.md
 │   └── email-triage-agent.md
-├── config/                     # Konfigurasjonsfiler
+├── config/
+│   └── teams-setup.md          # Steg-for-steg Teams og Azure-oppsett
 └── scripts/
-    └── setup.sh                # Oppsett-script
+    ├── setup.sh                # Oppsett-script
+    ├── teams-notify.sh         # Send varsler til Teams via webhook
+    └── teams-bot.js            # Teams Bot-server (to-veis kommandoer)
 ```
 
 ## Hardware
