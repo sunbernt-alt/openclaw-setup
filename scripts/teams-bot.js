@@ -10,7 +10,7 @@ require('dotenv').config({ path: `${__dirname}/../.env` });
 const { BotFrameworkAdapter, TurnContext } = require('botbuilder');
 const http = require('http');
 
-const PORT = parseInt(process.env.TEAMS_BOT_PORT || '3978', 10);
+const PORT = parseInt(process.env.PORT || process.env.TEAMS_BOT_PORT || '3978', 10);
 
 const adapter = new BotFrameworkAdapter({
     appId: process.env.TEAMS_BOT_APP_ID,
