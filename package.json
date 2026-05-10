@@ -1,0 +1,20 @@
+{
+  "name": "openclaw-bot",
+  "version": "1.0.0",
+  "description": "OpenClaw Teams Bot",
+  "main": "scripts/teams-bot.js",
+  "scripts": {
+    "start": "node scripts/teams-bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^4.23.3",
+    "dotenv": "^17.4.2"
+  }
+}
